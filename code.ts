@@ -82,7 +82,10 @@ figma.ui.onmessage = (msg) => {
 					}
 				}
 			}
+		} else if (msg.type === "cancel"){
+			figma.closePlugin()
 		}
+
 	})()
 
 };
